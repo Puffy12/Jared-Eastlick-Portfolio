@@ -1,7 +1,7 @@
 {
-  "name": "jared-eastlick-portfolio",
-  "version": "0.1.0",
-  "private": true,
+  "name": "jared-port",
+  "version": "1.0.0",
+  "main": "index.js",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
@@ -9,21 +9,19 @@
     "lint": "next lint",
     "prettier": "prettier -write ."
   },
+  "keywords": [],
+  "author": "Michael Mehrdadi, Brian Bielby",
+  "license": "MIT",
+  "description": "Jared Eastlick's Portfolio",
   "dependencies": {
+    "@chakra-ui/icons": "^2.1.1",
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
-    "@types/node": "20.12.7",
-    "@types/react": "18.3.1",
-    "@types/react-dom": "18.3.0",
-    "autoprefixer": "10.4.19",
     "framer-motion": "^11.1.7",
     "next": "^14.2.3",
-    "postcss": "8.4.38",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "tailwindcss": "3.4.3",
-    "typescript": "5.4.5"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "eslint": "^8.57.0",

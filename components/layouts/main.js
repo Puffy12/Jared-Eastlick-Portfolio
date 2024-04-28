@@ -1,13 +1,9 @@
 import Head from 'next/head'
 import { Box, Container } from '@chakra-ui/react'
-import { NextRouter } from 'next/router';
+import Navbar from '../navbar.js'
 
-interface MainProps {
-    children: React.ReactNode;
-    router: NextRouter;
-  }
 
-const Main = ({ children }: MainProps) => {
+const Main = ({ children, router }) => {
     return (
       <Box as="main" pb={8}>
         <Head>
@@ -16,6 +12,9 @@ const Main = ({ children }: MainProps) => {
             <meta name="author" content="Michael Mehrdadi, Brian Bielby" />
             <title>Jared Eastlick - Homepage</title>
         </Head>
+
+        <Navbar path={router.asPath}/>
+        
         <Container maxW="container.md" pt={14}>
           {children}
         </Container>
