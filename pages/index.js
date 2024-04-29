@@ -20,7 +20,7 @@ import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 import thumbYouTube from '../public/images/links/youtube.png'
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
-import Experience from './experience'
+import Experience from '../components/experience'
 
 const Home = () => (
   <Layout>
@@ -94,30 +94,11 @@ const Home = () => (
       </Section>
 
       <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">
-          Bio
+      <Heading as="h3" variant="section-title">
+          My Experience
         </Heading>
-        <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
-        </BioSection>
-        <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
-        </BioSection>
-        <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
-        </BioSection>
-        <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Working as a freelancer
-        </BioSection>
+        <Experience/>
       </Section>
-
-      <Experience/>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">

@@ -8,24 +8,19 @@ export default function Experience() {
   const theme = "dark";
 
   return (
-    <Box id="experience" mt="28" mb={{ base: "28", sm: "40" }}>
-      <Text as="h2" fontSize="3xl" fontWeight="bold" mb="4">My experience</Text>
-      <VerticalTimeline lineColor="" css={{ ".vertical-timeline-element-left.vertical-timeline-element": { display: "none" } }}>
+    <Box>
+      <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
-              className="vertical-timeline-element-left"
               contentStyle={{
                 background: theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
                 boxShadow: "none",
                 border: "1px solid rgba(0, 0, 0, 0.05)",
                 textAlign: "left",
                 borderRadius: "lg",
-                marginBottom: "28px",
-                width: "calc(50% + 12rem)",
-                marginLeft: "calc(-50% + 8rem)",
-                height: "calc(100% - 8rem)",
-                top: "1rem",
+                width: "calc(50% + 8rem)",
+                marginRight: "calc(-5%)",
                 transform: "translateY(0)",
               }}
               contentArrowStyle={{
@@ -33,6 +28,10 @@ export default function Experience() {
               }}
               date={item.date}
               visible={true}
+              iconStyle={{
+                display: "none"
+              }}
+              position="right"
          
             >
               <Text fontSize="xl" fontWeight="semibold" textTransform="capitalize" mb="1">{item.title}</Text>
