@@ -32,3 +32,13 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+## License
+
+MIT License.
+You can create your own homepage for free without notifying me by forking this project under the following conditions:
+- Add a link to [my homepage](https://www.craftz.dog/)
+- Do not use the 3d voxel dog
+
+Check out [LICENSE](./LICENSE) for more detail.
