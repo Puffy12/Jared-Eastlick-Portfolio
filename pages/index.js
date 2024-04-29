@@ -20,6 +20,7 @@ import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 import thumbYouTube from '../public/images/links/youtube.png'
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
+import Experience from './experience'
 
 const Home = () => (
   <Layout>
@@ -67,32 +68,17 @@ const Home = () => (
           </Box>
         </Box>
       </Box>
-
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           Work
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
-          <Link as={NextLink} href="/works/inkdrop" passHref scroll={false}>
-            Inkdrop
-          </Link>
-          . He publishes content for marketing his products and his YouTube
-          channel called &quot;
-          <Link
-            as={NextLink}
-            href="https://www.youtube.com/devaslife"
-            passHref
-            target="_blank"
-          >
-            Dev as Life
-          </Link>
-          &quot; has more than 100k subscribers.
+        I am well-versed in work-related applications like Excel, Stata, and word. From my experience as a QA tester 
+    and an economics student, these applications are used on a daily basis.
+    I also learned how to develop comprehensive lesson plans for different language 
+    levels and how to effectively implement them From my experience of teaching international students 
+    at the University of Chico State, I have cultivated a talent for attentiveness and patience. 
+    I have found that my approach builds trust and fosters a safe learning environment.
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -130,6 +116,8 @@ const Home = () => (
           Working as a freelancer
         </BioSection>
       </Section>
+
+      <Experience/>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
