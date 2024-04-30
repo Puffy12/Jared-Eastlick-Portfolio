@@ -13,6 +13,7 @@ export default function Experience() {
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
+              className="vertical-timeline-element--work"
               contentStyle={{
                 background: theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
                 boxShadow: "none",
@@ -21,7 +22,6 @@ export default function Experience() {
                 borderRadius: "lg",
                 width: "calc(50% + 8rem)",
                 marginRight: "calc(-5%)",
-                transform: "translateY(0)",
               }}
               contentArrowStyle={{
                 borderRight: theme === "light" ? "0.4rem solid #9ca3af" : "0.4rem solid rgba(255, 255, 255, 0.5)",
@@ -31,12 +31,11 @@ export default function Experience() {
               iconStyle={{
                 display: "none"
               }}
-              position="right"
          
             >
-              <Text fontSize="xl" fontWeight="semibold" textTransform="capitalize" mb="1">{item.title}</Text>
-              <Text fontSize="md" fontWeight="normal" mt="0" mb="1">{item.location}</Text>
-              <Text fontSize="md" fontWeight="normal" mt="1" color="white" opacity="0.75">{item.description}</Text>
+              <Text>{item.title}</Text>
+              <Text>{item.location}</Text>
+              <Text>{item.description}</Text>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}
