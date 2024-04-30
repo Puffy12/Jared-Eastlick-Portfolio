@@ -2,18 +2,18 @@ import { forwardRef } from 'react'
 import Logo from './logo'
 import NextLink from 'next/link'
 import {
-  Container,
-  Box,
-  Link,
-  Stack,
-  Heading,
-  Flex,
-  Menu,
-  MenuItem,
-  MenuList,
-  MenuButton,
-  IconButton,
-  useColorModeValue
+    Container,
+    Box,
+    Link,
+    Stack,
+    Heading,
+    Flex,
+    Menu,
+    MenuItem,
+    MenuList,
+    MenuButton,
+    IconButton,
+    useColorModeValue
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
@@ -94,7 +94,7 @@ const NavBar = props => {
                             aria-label="Options"
                         />
                         <MenuList>
-                            <MenuItem as={MenuLink} href="/Works">
+                            <MenuItem as={MenuLink} href="/works">
                                 Works
                             </MenuItem>
                             <MenuItem as={MenuLink} href="/blog">

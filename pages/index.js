@@ -102,7 +102,7 @@ const Home = () => (
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          I ♥
+          Hobbies
         </Heading>
         <Paragraph>
           Art, Music,{' '}
@@ -119,7 +119,7 @@ const Home = () => (
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          On the web
+          Links
         </Heading>
         <List>
           <ListItem>
