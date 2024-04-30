@@ -23,21 +23,6 @@ const Works = () => (
         </Heading>
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
-            <Section>
-                <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
-                A Markdown note-taking app with 100+ plugins, cross-platform and
-                encrypted data sync support
-                </WorkGridItem>
-            </Section>
-            <Section>
-                <WorkGridItem
-                id="walknote"
-                title="walknote"
-                thumbnail={thumbWalknote}
-                >
-                Music recommendation app for iOS
-                </WorkGridItem>
-            </Section>
 
             <Section delay={0.1}>
                 <WorkGridItem
@@ -81,11 +66,6 @@ const Works = () => (
                 The mode magazine for understanding to personally enjoy Japan
                 </WorkGridItem>
             </Section>
-            <Section delay={0.3}>
-                <WorkGridItem id="styly" thumbnail={thumbStyly} title="Styly">
-                A VR Creative tools for fashion brands
-                </WorkGridItem>
-            </Section>
         </SimpleGrid>
 
         <Section delay={0.4}>
@@ -109,12 +89,6 @@ const Works = () => (
                 title="freeDBTagger"
                 >
                 Automatic audio file tagging tool using FreeDB for Windows
-                </WorkGridItem>
-            </Section>
-            <Section delay={0.6}>
-                <WorkGridItem id="amembo" thumbnail={thumbAmembo} title="Amembo">
-                P2P private file sharing tool with MSN Messenger integration for
-                Windows
                 </WorkGridItem>
             </Section>
         </SimpleGrid>
