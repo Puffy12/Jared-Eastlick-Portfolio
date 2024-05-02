@@ -5,12 +5,12 @@ import {
   Input,
   Textarea,
   Button,
-  chakra
+  chakra,
+  useColorModeValue
 } from '@chakra-ui/react'
-import { motion, Variants } from 'framer-motion'
-import { FaArrowCircleDown } from 'react-icons/fa'
+import { motion } from 'framer-motion'
+import { FaArrowCircleDown, FaPaperPlane } from 'react-icons/fa'
 import toast from 'react-hot-toast'
-import { FaPaperPlane } from 'react-icons/fa'
 
 const arrowVariants = {
   animate: {
@@ -26,40 +26,32 @@ const arrowVariants = {
 
 const Contact = () => {
   const ChakraPaperPlane = chakra(FaPaperPlane) // Wrap the icon component with chakra
+  const bg = useColorModeValue('white', 'gray.800'); // Background color for inputs
+  const borderColor = useColorModeValue('gray.300', 'gray.600'); // Border color for inputs
+  const hoverBg = useColorModeValue('gray.100', 'gray.700'); // Background color on hover for inputs
+  const buttonBg = useColorModeValue('teal', 'teal.400'); // Button background
 
   const handleSubmit = async event => {
-    event.preventDefault()
-    const formData = new FormData(event.target)
-    if (error) {
-      toast.error(error)
-      return
-    }
-
-    toast.success('Email sent successfully!')
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    // Simulated sending logic (place your actual sending logic here)
+    toast.success('Email sent successfully!');
   }
 
   return (
     <motion.section
       id="contact"
       className="mb-20 sm:mb-32 w-[min(100%,38rem)] text-center scroll-mt-28"
-      initial={{
-        opacity: 0
-      }}
-      whileInView={{
-        opacity: 1
-      }}
-      transition={{
-        duration: 1
-      }}
-      viewport={{
-        once: true
-      }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
     >
       <Heading textAlign="center" variant="section-title" fontSize="xl" mt={10}>
         Contact me
       </Heading>
 
-      <Text color="gray.700" textAlign="center" mt={6}>
+      <Text variant="section-title" textAlign="center" mt={6}>
         Please contact me directly at{' '}
         <a className="underline" href="mailto:michaelmehrdadi123@gmail.com">
           michaelmehrdadi123@gmail.com
@@ -78,7 +70,7 @@ const Contact = () => {
           w="14"
           h="14"
           fontSize="3xl"
-          color="black"
+          color={buttonBg}
           cursor="pointer"
         >
           <FaArrowCircleDown />
@@ -91,10 +83,11 @@ const Contact = () => {
           px="4"
           rounded="lg"
           borderWidth="1px"
-          borderColor="black"
-          bg="white"
-          _hover={{ bg: 'white' }}
-          _focus={{ bg: 'white', borderColor: 'black', boxShadow: 'outline' }}
+          borderColor={borderColor}
+          bg={bg}
+          _hover={{ bg: hoverBg }}
+          _focus={{ borderColor: 'black', boxShadow: 'outline' }}
+          _placeholder={{ color: "gray.400" }}
           name="senderEmail"
           type="email"
           required
@@ -106,10 +99,11 @@ const Contact = () => {
           h="52"
           rounded="lg"
           borderWidth="1px"
-          borderColor="black"
-          bg="white"
-          _hover={{ bg: 'white' }}
-          _focus={{ bg: 'white', borderColor: 'black', boxShadow: 'outline' }}
+          borderColor={borderColor}
+          bg={bg}
+          _hover={{ bg: hoverBg }}
+          _focus={{ borderColor: 'black', boxShadow: 'outline' }}
+          _placeholder={{ color: "gray.400" }}
           name="message"
           placeholder="Your message"
           required
@@ -118,14 +112,13 @@ const Contact = () => {
         />
         <Button
           type="submit"
-          bg="gray.900"
-          color="white"
+          colorScheme='teal'
           borderRadius="full"
           outline="none"
           transition="all 0.2s"
-          _hover={{ bg: 'gray.950', transform: 'scale(1.1)' }}
+          _hover={{ bg: 'teal.600', transform: 'scale(1.1)' }}
           _active={{ transform: 'scale(0.95)' }}
-          _disabled={{ bg: 'gray.700', cursor: 'not-allowed' }}
+          _disabled={{ bg: 'gray.500', cursor: 'not-allowed' }}
           w="8rem"
           h="3rem"
           display="flex"
