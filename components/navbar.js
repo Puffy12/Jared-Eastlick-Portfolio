@@ -79,6 +79,9 @@ const NavBar = props => {
                         <LinkItem href="/about" path={path}>
                             About
                         </LinkItem>
+                        <LinkItem href="/contact" path={path}>
+                            Contact
+                        </LinkItem>
                                         
                 </Stack>
 
@@ -102,6 +105,9 @@ const NavBar = props => {
                             </MenuItem>
                             <MenuItem as={MenuLink} href="/about">
                                 About
+                            </MenuItem>
+                            <MenuItem as={MenuLink} href="/contact">
+                                Contact
                             </MenuItem>
 
                         </MenuList>
