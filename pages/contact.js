@@ -12,6 +12,7 @@ import { FaArrowCircleDown } from 'react-icons/fa'
 import toast from 'react-hot-toast'
 import { FaPaperPlane } from 'react-icons/fa'
 
+
 const arrowVariants = {
   animate: {
     y: [0, -15, 0],
@@ -41,7 +42,6 @@ const Contact = () => {
   return (
     <motion.section
       id="contact"
-      className="mb-20 sm:mb-32 w-[min(100%,38rem)] text-center scroll-mt-28"
       initial={{
         opacity: 0
       }}
@@ -59,7 +59,7 @@ const Contact = () => {
         Contact me
       </Heading>
 
-      <Text color="gray.700" textAlign="center" mt={6}>
+      <Text textAlign="center" mt={6}>
         Please contact me directly at{' '}
         <a className="underline" href="mailto:michaelmehrdadi123@gmail.com">
           michaelmehrdadi123@gmail.com
@@ -78,7 +78,6 @@ const Contact = () => {
           w="14"
           h="14"
           fontSize="3xl"
-          color="black"
           cursor="pointer"
         >
           <FaArrowCircleDown />
@@ -118,8 +117,6 @@ const Contact = () => {
         />
         <Button
           type="submit"
-          bg="gray.900"
-          color="white"
           borderRadius="full"
           outline="none"
           transition="all 0.2s"
