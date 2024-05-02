@@ -20,7 +20,7 @@ const about = () => {
                 >                    
                     About Me
                 </Heading>
-                <Paragraph>
+                <Paragraph >
                     I am well-versed in work-related applications like Excel, Stata, and word. From my experience as a QA tester 
                 and an economics student, these applications are used on a daily basis.
                 I also learned how to develop comprehensive lesson plans for different language 
