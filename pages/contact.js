@@ -49,9 +49,9 @@ const Contact = () => {
         once: true,
       }}
     >
-      <Heading>Contact me</Heading>
+      <Heading textAlign="center" variant="section-title" fontSize="xl" mt={10}>Contact me</Heading>
 
-      <Text color="gray.700" textAlign="center">
+      <Text color="gray.700" textAlign="center" mt={6}>
         Please contact me directly at{" "}
         <a className="underline" href="mailto:michaelmehrdadi123@gmail.com">
           michaelmehrdadi123@gmail.com
@@ -60,7 +60,7 @@ const Contact = () => {
       </Text>
 
       <motion.div variants={arrowVariants} animate="animate" style={{ cursor: "pointer", display: "flex", justifyContent: "center" }}>
-        <Box mt="6" mb="6" w="14" h="14" fontSize="3xl" color="black" cursor="pointer">
+        <Box mt="10" mb="6" w="14" h="14" fontSize="3xl" color="black" cursor="pointer">
           <FaArrowCircleDown />
         </Box>
       </motion.div>
