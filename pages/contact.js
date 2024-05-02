@@ -30,7 +30,6 @@ const Contact = () => {
   const bg = useColorModeValue('white', 'gray.800'); // Background color for inputs
   const borderColor = useColorModeValue('gray.300', 'gray.600'); // Border color for inputs
   const hoverBg = useColorModeValue('gray.100', 'gray.700'); // Background color on hover for inputs
-  const buttonBg = useColorModeValue('teal', 'teal.400'); // Button background
 
   const handleSubmit = async event => {
     event.preventDefault();
@@ -122,7 +121,8 @@ const Contact = () => {
           borderRadius="full"
           outline="none"
           transition="all 0.2s"
-          _hover={{ bg: 'teal.600', transform: 'scale(1.1)' }}
+          colorScheme='teal'
+          _hover={{ bg: 'teal.400', transform: 'scale(1.1)' }}
           _active={{ transform: 'scale(0.95)' }}
           _disabled={{ bg: 'gray.500', cursor: 'not-allowed' }}
           w="8rem"
