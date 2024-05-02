@@ -16,7 +16,7 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import thumbYouTube from '../public/images/links/youtube.png'
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
@@ -123,52 +123,30 @@ const Home = () => (
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="https://www.linkedin.com/in/jared-eastlick-011640280/" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<IoLogoGithub />}
+                leftIcon={<IoLogoLinkedin />}
               >
-                @craftzdog
+                 @JaredEastlick
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
+            <Link href="https://twitter.com/JaredEastlick" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoTwitter />}
               >
-                @inkdrop_app (English)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @craftzdog (日本語)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoInstagram />}
-              >
-                @craftzdog
+                @JaredEastlick
               </Button>
             </Link>
           </ListItem>
         </List>
 
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+        <SimpleGrid columns={[1, 2, 2]} gap={6} mt={10}>
           <GridItem
             href="https://www.youtube.com/devaslife"
             title="Dev as Life"
@@ -185,7 +163,7 @@ const Home = () => (
           </GridItem>
         </SimpleGrid>
 
-        <Heading as="h3" variant="section-title">
+        <Heading as="h3" variant="section-title" mt={10}>
           Contact Me
         </Heading>
         <p>
@@ -193,7 +171,7 @@ const Home = () => (
           Check out the link below.
         </p>
 
-        <Box align="center" my={4}>
+        <Box align="center" my={4} mt={10}>
           <Button
             as={NextLink}
             href="/contact"
