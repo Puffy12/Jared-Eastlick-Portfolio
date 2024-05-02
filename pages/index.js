@@ -88,7 +88,7 @@ const Home = () => (
             rightIcon={<ChevronRightIcon />}
             colorScheme="teal"
           >
-            My portfolio
+            My Works
           </Button>
         </Box>
       </Section>
@@ -186,22 +186,22 @@ const Home = () => (
         </SimpleGrid>
 
         <Heading as="h3" variant="section-title">
-          Newsletter
+          Contact Me
         </Heading>
         <p>
-          Join me on a behind-the-scenes coding journey. Weekly updates on
-          projects, tutorials, and videos
+          Feel free to contant me about any free lancing or any other ropportunity.
+          Check out the link below.
         </p>
 
         <Box align="center" my={4}>
           <Button
             as={NextLink}
-            href="https://www.devas.life/"
+            href="/contact"
             scroll={false}
             leftIcon={<EmailIcon />}
             colorScheme="teal"
           >
-            Sign up my newsletter here
+            Contact Me
           </Button>
         </Box>
       </Section>
