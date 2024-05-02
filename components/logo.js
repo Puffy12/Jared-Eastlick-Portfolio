@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { Text, useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
-import FootprintIcon from './icons/footprint'
+import AmericanFlagIcon from './icons/flag'
 
 const LogoBox = styled.span`
   font-weight: bold;
@@ -13,6 +13,7 @@ const LogoBox = styled.span`
   padding: 10px;
 
   > svg {
+    margin-right: 6px;
     transition: 200ms ease;
   }
 
@@ -26,7 +27,7 @@ const Logo = () => {
     (<Link href="/" scroll={false}>
 
       <LogoBox>
-        <FootprintIcon />
+        <AmericanFlagIcon />
 
         <Text
           color={useColorModeValue('gray.800', 'whiteAlpha.900')}
@@ -34,7 +35,7 @@ const Logo = () => {
           fontWeight="bold"
           ml={3}
         >
-          Jared Easlick
+          Jared Eastlick
         </Text>
       </LogoBox>
 
