@@ -6,7 +6,7 @@ import { GridItem } from '../components/grid-item'
 import { gridData , gridData2, gridData3} from "../lib/blog_data";
 
 const Posts = () => (
-  <Layout title="Posts">
+  <Layout title="Blog">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
         Popular Posts
