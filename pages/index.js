@@ -16,7 +16,7 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import { IoLogoTwitter, IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io5'
 import thumbYouTube from '../public/images/links/youtube.png'
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
@@ -105,15 +105,10 @@ const Home = () => (
           Hobbies
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
+        In my free time, I like to travel, learn new languages, and study. 
+        I have been learning Korean for nearly 5 years and had the opportunity 
+        to live in the Korean capital, Seoul, for a year. When I am not studying, 
+        I enjoy going to the gym and running.
         </Paragraph>
       </Section>
 
@@ -122,6 +117,17 @@ const Home = () => (
           Links
         </Heading>
         <List>
+        <ListItem>
+            <Link href="https://www.instagram.com/jared.beastlick/" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoInstagram />}
+              >
+                @JaredEastlick
+              </Button>
+            </Link>
+          </ListItem>
           <ListItem>
             <Link href="https://www.linkedin.com/in/jared-eastlick-011640280/" target="_blank">
               <Button
