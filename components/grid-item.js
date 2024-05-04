@@ -2,9 +2,10 @@ import NextLink from 'next/link'
 import Image from 'next/image'
 import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
+import styled from '@emotion/styled';
 
 export const GridItem = ({ children, href, title, thumbnail }) => (
-  <Box w="100%" textAlign="center">
+  <CardStyle w="100%" textAlign="center">
     <LinkBox cursor="pointer">
       <Image
         src={thumbnail}
@@ -18,7 +19,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
       </LinkOverlay>
       <Text fontSize={14}>{children}</Text>
     </LinkBox>
-  </Box>
+  </CardStyle>
 )
 
 export const WorkGridItem = ({
@@ -27,7 +28,7 @@ export const WorkGridItem = ({
   thumbnail,
   href
 }) => (
-  <Box w="100%" textAlign="center">
+  <CardStyle w="100%" textAlign="center">
     <LinkBox
       as={NextLink}
       href={href}
@@ -48,7 +49,7 @@ export const WorkGridItem = ({
       </LinkOverlay>
       <Text fontSize={14}>{children}</Text>
     </LinkBox>
-  </Box>
+  </CardStyle>
 )
 
 export const GridItemStyle = () => (
@@ -60,3 +61,14 @@ export const GridItemStyle = () => (
     `}
   />
 )
+
+const CardStyle = styled.div`
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+`;
