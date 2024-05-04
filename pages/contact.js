@@ -12,11 +12,10 @@ import { motion } from 'framer-motion'
 import { FaArrowCircleDown, FaPaperPlane } from 'react-icons/fa'
 import toast from 'react-hot-toast'
 import Layout from '../components/layouts/article'
-import { useRef } from "react";
-import emailjs from "@emailjs/browser";
-import { Toaster } from "react-hot-toast";
-require("dotenv").config();
-
+import { useRef } from 'react'
+import emailjs from '@emailjs/browser'
+import { Toaster } from 'react-hot-toast'
+require('dotenv').config()
 
 const arrowVariants = {
   animate: {
@@ -35,32 +34,25 @@ const Contact = () => {
   const bg = useColorModeValue('white', 'gray.800') // Background color for inputs
   const borderColor = useColorModeValue('gray.300', 'gray.600') // Border color for inputs
   const hoverBg = useColorModeValue('gray.100', 'gray.700') // Background color on hover for inputs
-  const form = useRef();
+  const form = useRef()
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    const service_id = "service_h9h43uq"//process.env.SERVICE_ID;
-    const template_id = "template_yz9lihg"//process.env.TEMPLATE_ID;
-    const user_id = "EZjkLuEOvdZLQ5M_r"//process.env.USER_ID
+  const sendEmail = e => {
+    e.preventDefault()
+    const service_id = 'service_h9h43uq' //process.env.SERVICE_ID;
+    const template_id = 'template_yz9lihg' //process.env.TEMPLATE_ID;
+    const user_id = 'EZjkLuEOvdZLQ5M_r' //process.env.USER_ID
 
-    emailjs
-        .sendForm(
-          service_id,
-          template_id,
-          form.current,
-          user_id
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-            toast.success("Email sent successfully!");
-          },
-          (error) => {
-            toast.error(error);
-            return;
-          }
-        );
-    };
+    emailjs.sendForm(service_id, template_id, form.current, user_id).then(
+      result => {
+        console.log(result.text)
+        toast.success('Email sent successfully!')
+      },
+      error => {
+        toast.error(error)
+        return
+      }
+    )
+  }
 
   return (
     <Layout title="Contact">
