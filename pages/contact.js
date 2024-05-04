@@ -38,9 +38,9 @@ const Contact = () => {
 
   const sendEmail = e => {
     e.preventDefault()
-    const service_id = process.env.SERVICE_ID;
-    const template_id = process.env.TEMPLATE_ID;
-    const user_id = process.env.USER_ID
+    const service_id = process.env.SERVICE_ID; //SERVICE_ID
+    const template_id = process.env.TEMPLATE_ID; //TEMPLATE_ID
+    const user_id = process.env.USER_ID //USER_ID
 
     emailjs.sendForm(service_id, template_id, form.current, user_id).then(
       result => {
