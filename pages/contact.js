@@ -12,6 +12,10 @@ import { motion } from 'framer-motion'
 import { FaArrowCircleDown, FaPaperPlane } from 'react-icons/fa'
 import toast from 'react-hot-toast'
 import Layout from '../components/layouts/article'
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { Toaster } from "react-hot-toast";
+
 
 const arrowVariants = {
   animate: {
@@ -30,16 +34,36 @@ const Contact = () => {
   const bg = useColorModeValue('white', 'gray.800') // Background color for inputs
   const borderColor = useColorModeValue('gray.300', 'gray.600') // Border color for inputs
   const hoverBg = useColorModeValue('gray.100', 'gray.700') // Background color on hover for inputs
+  const form = useRef();
+  const service_id = process.env.SERVICE_ID;
+  const template_id = process.env.TEMPLATE_ID;
+  const user_id = process.env.USER_ID
 
-  const handleSubmit = async event => {
-    event.preventDefault()
-    const formData = new FormData(event.target)
-    // Simulated sending logic (place your actual sending logic here)
-    toast.success('Email sent successfully!')
-  }
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+        .sendForm(
+          service_id,
+          template_id,
+          form.current,
+          user_id
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            toast.success("Email sent successfully!");
+          },
+          (error) => {
+            toast.error(error);
+            return;
+          }
+        );
+    };
 
   return (
     <Layout title="Contact">
+      <Toaster position="top-right" />
       <motion.section
         id="contact"
         initial={{
@@ -86,7 +110,7 @@ const Contact = () => {
           </Box>
         </motion.div>
 
-        <form onSubmit={handleSubmit} className="mt-10 flex flex-col">
+        <form className="mt-10 flex flex-col" onSubmit={sendEmail}>
           <Input
             h="14"
             px="4"
