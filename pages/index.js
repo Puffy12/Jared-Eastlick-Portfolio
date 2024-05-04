@@ -173,7 +173,7 @@ const Home = () => (
           Contact Me
         </Heading>
         <p>
-          Feel free to contant me about any free lancing or any other ropportunity.
+          Feel free to contant me about any free lancing or any other opportunity.
           Check out the link below.
         </p>
 
