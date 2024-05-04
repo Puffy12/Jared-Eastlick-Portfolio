@@ -20,9 +20,11 @@ import thumbYouTube from '../public/images/links/youtube.png'
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
 import Experience from '../components/experience'
+import { GlobeDemo } from '../components/globe-demo'
 
 const Home = () => (
   <Layout>
+  <GlobeDemo />
     <Container>
       <Box
         borderRadius="lg"
