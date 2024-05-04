@@ -5,7 +5,7 @@ import { Container, Heading, Box, Button, List, ListItem, ListIcon,Image
 import Paragraph from '../components/paragraph'
 import Section from '../components/section'
 import NextLink from 'next/link'
-import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 import { MdCheckCircle, MdSettings } from "react-icons/md";
 
 
