@@ -82,7 +82,7 @@ const Contact = () => {
 
         <Text textAlign="center" mt={6}>
           Please contact me directly at{' '}
-          <a className="underline" href="mailto:jaredeastlick@gmail.com">
+          <a style={{ color: "#88ccca", fontWeight: "bolder" }} href="mailto:jaredeastlick@gmail.com">
             jaredeastlick@gmail.com
           </a>{' '}
           <br /> or through this form.
