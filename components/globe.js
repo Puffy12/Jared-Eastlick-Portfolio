@@ -1,4 +1,5 @@
-/*  CAUSING BUILD ERRORS 
+/* eslint-disable react-hooks/exhaustive-deps */
+
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { Color, Scene, Fog, PerspectiveCamera, Vector3 } from "three";
@@ -98,7 +99,7 @@ export function Globe({ globeConfig, data }) {
         .showAtmosphere(defaultProps.showAtmosphere)
         .atmosphereColor(defaultProps.atmosphereColor)
         .atmosphereAltitude(defaultProps.atmosphereAltitude)
-        .hexPolygonColor((e) => {
+        .hexPolygonColor(() => {
           return defaultProps.polygonColor;
         });
       startAnimation();
@@ -118,13 +119,13 @@ export function Globe({ globeConfig, data }) {
       .arcAltitude((e) => {
         return (e).arcAlt * 1;
       })
-      .arcStroke((e) => {
+      .arcStroke(() => {
         return [0.32, 0.28, 0.3][Math.round(Math.random() * 2)];
       })
       .arcDashLength(defaultProps.arcLength)
       .arcDashInitialGap((e) => (e.order * 1))
       .arcDashGap(15)
-      .arcDashAnimateTime((e) => defaultProps.arcTime);
+      .arcDashAnimateTime(() => defaultProps.arcTime);
 
     globeRef.current
       .pointsData(data)
@@ -246,4 +247,3 @@ export function genRandomNumbers(min, max, count) {
 }
 
 
-*/
