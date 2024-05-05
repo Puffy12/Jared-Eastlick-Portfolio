@@ -2,26 +2,36 @@
 import React from "react";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
+import { useColorModeValue } from "@chakra-ui/react";
 
 const World = dynamic(() => import("./globe").then((m) => m.World), {
   ssr: false,
 });
 
 export function GlobeDemo() {
+    const colorMode = useColorModeValue('light', 'dark');
+    const globeColor = useColorModeValue('#f0e7db', '#5B5B5C');
+  const ambientLight = useColorModeValue('#7B9DCA', '#4E84CA');
+  const directionalLight = useColorModeValue('#aaaaaa', '#aaaaaa');
+  const pointLightColor = useColorModeValue('#777777', '#777777');
+  const emissiveColor = useColorModeValue('#777777', '#47587A');
+  const polygonColor = useColorModeValue('rgba(0,0,0,0.9)', 'rgba(255,255,255,0.7)');
+  const atmosphereColor = useColorModeValue('#000000', '#FFFFFF');
+
   const globeConfig = {
     pointSize: 4,
-    globeColor: "#3E3E3F",
+    globeColor: globeColor,
     showAtmosphere: true,
-    atmosphereColor: "#FFFFFF",
+    atmosphereColor: atmosphereColor,
     atmosphereAltitude: 0.1,
-    emissive: "#111214",
+    emissive: emissiveColor,
     emissiveIntensity: 0.1,
     shininess: 0.9,
-    polygonColor: "rgba(255,255,255,0.7)",
-    ambientLight: "#b2d8d8",
-    directionalLeftLight: "#ffffff",
-    directionalTopLight: "#ffffff",
-    pointLight: "#ffffff",
+    polygonColor: polygonColor,
+    ambientLight: ambientLight,
+    directionalLeftLight: directionalLight,
+    directionalTopLight: directionalLight,
+    pointLight: pointLightColor,
     arcTime: 1000,
     arcLength: 0.9,
     rings: 1,
@@ -435,7 +445,7 @@ export function GlobeDemo() {
         height: '400px', // Adjust height for globe size
         zIndex: '1'
       }}>
-          <World data={sampleArcs} globeConfig={globeConfig} />
+          <World key={colorMode} data={sampleArcs} globeConfig={globeConfig} />
         </div>
       </div>
     </div>
