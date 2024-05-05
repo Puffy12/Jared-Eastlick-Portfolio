@@ -82,8 +82,8 @@ const Contact = () => {
 
         <Text textAlign="center" mt={6}>
           Please contact me directly at{' '}
-          <a className="underline" href="mailto:michaelmehrdadi123@gmail.com">
-            michaelmehrdadi123@gmail.com
+          <a className="underline" href="mailto:jaredeastlick@gmail.com">
+            jaredeastlick@gmail.com
           </a>{' '}
           <br /> or through this form.
         </Text>
