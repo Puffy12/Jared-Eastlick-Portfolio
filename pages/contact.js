@@ -103,6 +103,7 @@ const Contact = () => {
         </motion.div>
 
         <form className="mt-10 flex flex-col" onSubmit={sendEmail} ref={form}>
+          <Input type="hidden" name="from_name" value="Jared Porfolo" />
           <Input
             h="14"
             px="4"
