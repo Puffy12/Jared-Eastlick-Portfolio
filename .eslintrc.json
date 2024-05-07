@@ -13,7 +13,6 @@
     "react/no-unknown-property": [
       "warn",
       {
-        "ignore": ["fetchPriority"]
       }
     ]
   }

@@ -453,7 +453,7 @@ export function GlobeDemo() {
             zIndex: '1'
           }}
         >
-          <World key={colorMode} data={sampleArcs} globeConfig={globeConfig} />
+          <World key={colorMode + sampleArcs.length} data={sampleArcs} globeConfig={globeConfig} />
         </div>
       </div>
     </div>
