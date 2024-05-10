@@ -8,7 +8,9 @@ import {
   Button,
   List,
   ListItem,
-  useColorModeValue
+  useColorModeValue,
+  ListIcon
+
 } from '@chakra-ui/react'
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -20,7 +22,10 @@ import thumbYouTube from '../public/images/links/youtube.png'
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
 import Experience from '../components/experience'
+import Education from '../components/education'
 import { GlobeDemo } from '../components/globe-demo'
+import { MdCheckCircle } from "react-icons/md";
+
 
 const Home = () => (
   <Layout>
@@ -94,6 +99,22 @@ const Home = () => (
         </Box>
       </Section>
 
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          Achievements
+        </Heading>
+        <List spacing={3}>
+          <ListItem>
+            <ListIcon as={MdCheckCircle} color="green.500" />
+                Wrote a Best-in-Class (BIC) review summarizing tester&apos;s opinions on the best floor fans available that has nearly 12,000 views
+            </ListItem>
+            <ListItem>
+            <ListIcon as={MdCheckCircle} color="green.500" />
+              My best performing individual product review,the Amazfit Band 7 fitness tracker,  has attracted over 7,000 views.
+            </ListItem>
+          </List>
+      </Section>
+
       <Section delay={0.2}>
       <Heading as="h3" variant="section-title">
           My Experience
@@ -102,22 +123,10 @@ const Home = () => (
       </Section>
 
       <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          Hobbies
-        </Heading>
-        <Paragraph>
-        In my free time, I like to travel, learn new languages, and study. 
-        I have been learning Korean for nearly 5 years and had the opportunity 
-        to live in the Korean capital, Seoul, for a year. When I am not studying, 
-        I enjoy going to the gym and running.
-        </Paragraph>
-      </Section>
-
-      <Section delay={0.3}>
       <Heading as="h3" variant="section-title">
         Education/Qualifications
         </Heading>
-        <Experience/>
+        <Education/>
       </Section>
 
       <Section delay={0.3}>
