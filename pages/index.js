@@ -18,8 +18,8 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+import thumbFloorFans from '../public/images/works/floorfans_eyecatch.png'
+import thumbGamingKeyboards from '../public/images/works/gamingkeyboards_eyecatch.png'
 import Image from 'next/image'
 import Experience from '../components/experience'
 import Education from '../components/education'
@@ -97,7 +97,7 @@ const Home = () => (
       </Section>
 
       <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
+        <Heading as="h3" variant="section-title" mt={20}>
           Achievements
         </Heading>
         <List spacing={3}>
@@ -113,14 +113,14 @@ const Home = () => (
       </Section>
 
       <Section delay={0.2}>
-      <Heading as="h3" variant="section-title">
+      <Heading as="h3" variant="section-title" mt={20}>
           My Experience
         </Heading>
         <Experience/>
       </Section>
 
-      <Section delay={0.3}>
-      <Heading as="h3" variant="section-title">
+      <Section delay={0.3} >
+      <Heading as="h3" variant="section-title" mt={20}>
         Education/Qualifications
         </Heading>
         <Education/>
@@ -168,22 +168,22 @@ const Home = () => (
 
         <SimpleGrid columns={[1, 2, 2]} gap={6} mt={10}>
           <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
+            href="https://www.techgearlab.com/topics/home/best-floor-fan"
+            title="Best Floor Fans of 2024 "
+            thumbnail={thumbFloorFans}
           >
-            My YouTube channel (&gt;150k subs)
+            An article about the 4 best floor fans of 2024
           </GridItem>
           <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
+            href="https://www.techgearlab.com/topics/cool-gadgets/best-gaming-keyboard"
+            title="Best Gaming Keyboards"
+            thumbnail={thumbGamingKeyboards}
           >
-            A Markdown note-taking app
+            An article about the 6 best gaming keyboards
           </GridItem>
         </SimpleGrid>
 
-        <Heading as="h3" variant="section-title" mt={10}>
+        <Heading as="h3" variant="section-title" mt={20}>
           Contact Me
         </Heading>
         <p>

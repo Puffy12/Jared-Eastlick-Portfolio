@@ -6,7 +6,7 @@ import Paragraph from '../components/paragraph'
 import Section from '../components/section'
 import NextLink from 'next/link'
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import { MdCheckCircle, MdSettings } from "react-icons/md";
+import { MdSettings } from "react-icons/md";
 
 
 const about = () => {
