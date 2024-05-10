@@ -39,7 +39,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m a Free-lance writer based in the United States! 
+        Hello, I&apos;m a Experienced Freelance Content Writer based in the United States! 
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -79,12 +79,9 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-        I am well-versed in work-related applications like Excel, Stata, and word. From my experience as a QA tester 
-    and an economics student, these applications are used on a daily basis.
-    I also learned how to develop comprehensive lesson plans for different language 
-    levels and how to effectively implement them From my experience of teaching international students 
-    at the University of Chico State, I have cultivated a talent for attentiveness and patience. 
-    I have found that my approach builds trust and fosters a safe learning environment.
+        Detail-oriented writer and economics graduate seeking to help clients boost traffic on their websites by creating quality content that follows 
+        the most up-to-date date SEO Practices.Worked on 21 different content writing assignments covering topics such as smartwatches, 
+        fitness trackers, printers, gaming keyboards, and fans that has helped generate traffic to reach new audiences. 
         </Paragraph>
         <Box align="center" my={4}>
           <Button

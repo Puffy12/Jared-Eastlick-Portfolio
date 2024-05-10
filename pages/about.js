@@ -21,12 +21,10 @@ const about = () => {
                     About Me
                 </Heading>
                 <Paragraph >
-                    I am well-versed in work-related applications like Excel, Stata, and word. From my experience as a QA tester 
-                and an economics student, these applications are used on a daily basis.
-                I also learned how to develop comprehensive lesson plans for different language 
-                levels and how to effectively implement them From my experience of teaching international students 
-                at the University of Chico State, I have cultivated a talent for attentiveness and patience. 
-                I have found that my approach builds trust and fosters a safe learning environment.
+                I have developed my writing niche in technology product reviews, but I aim to broaden my horizons by 
+                delving into niches related to foreign policy, culture, 
+                and travel. My prior experience with work-related applications such as Excel, Stata, 
+                and Word helps me organize and develop persuasive articles backed by authoritative and up-to-date data.
                 </Paragraph>
             </Container>
 
@@ -60,12 +58,10 @@ const about = () => {
                     More...
                     </Heading>
                     <Paragraph>
-                    I am well-versed in work-related applications like Excel, Stata, and word. From my experience as a QA tester
-                    and an economics student, these applications are used on a daily basis. I also learned how to develop
-                    comprehensive lesson plans for different language levels and how to effectively implement them From my
-                    experience of teaching international students at the University of Chico State, I have cultivated a talent
-                    for attentiveness and patience. I have found that my approach builds trust and fosters a safe learning
-                    environment.
+                    In my free time, I like to travel, learn new languages, and study. 
+                    I have been learning Korean for nearly 5 years and had the opportunity 
+                    to live in the Korean capital, Seoul, for a year. When I am not studying, 
+                    I enjoy going to the gym and running.
                     </Paragraph>
                     <Box align="center" my={4}>
                     <Button
@@ -106,20 +102,20 @@ const about = () => {
                 <Box textAlign="center">
                     <List spacing={3}>
                     <ListItem>
-                        <ListIcon as={MdCheckCircle} color="green.500" />
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit
-                    </ListItem>
-                    <ListItem>
-                        <ListIcon as={MdCheckCircle} color="green.500" />
-                        Assumenda, quia temporibus eveniet a libero incidunt suscipit
-                    </ListItem>
-                    <ListItem>
-                        <ListIcon as={MdCheckCircle} color="green.500" />
-                        Quidem, ipsam illum quis sed voluptatum quae eum fugit earum
+                        <ListIcon as={MdSettings} color="green.500" />
+                        Develop and launch my own blog
                     </ListItem>
                     <ListItem>
                         <ListIcon as={MdSettings} color="green.500" />
-                        Quidem, ipsam illum quis sed voluptatum quae eum fugit earum
+                        Collaborate with a diverse range of clients
+                    </ListItem>
+                    <ListItem>
+                        <ListIcon as={MdSettings} color="green.500" />
+                        Pursue a Master&apos;s or Ph.D. program related to foreign policy
+                    </ListItem>
+                    <ListItem>
+                        <ListIcon as={MdSettings} color="green.500" />
+                        Achieve a Level 6 proficiency in the TOPIK (Test of Proficiency in Korean) exam
                     </ListItem>
                     </List>
                 </Box>
