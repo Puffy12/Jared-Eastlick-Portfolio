@@ -12,19 +12,20 @@ import {
   ListIcon
 
 } from '@chakra-ui/react'
-import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
-import Paragraph from '../components/paragraph'
-import Layout from '../components/layouts/article'
-import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io5'
-import thumbFloorFans from '../public/images/works/floorfans_eyecatch.png'
-import thumbGamingKeyboards from '../public/images/works/gamingkeyboards_eyecatch.png'
-import Image from 'next/image'
-import Experience from '../components/experience'
-import Education from '../components/education'
-import { GlobeDemo } from '../components/globe-demo'
+import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons';
+import Paragraph from '../components/paragraph';
+import Layout from '../components/layouts/article';
+import Section from '../components/section';
+import { GridItem } from '../components/grid-item';
+import { IoLogoTwitter, IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io5';
+import thumbFloorFans from '../public/images/works/floorfans_eyecatch.png';
+import thumbGamingKeyboards from '../public/images/works/gamingkeyboards_eyecatch.png';
+import Image from 'next/image';
+import Experience from '../components/experience';
+import Education from '../components/education';
+import { GlobeDemo } from '../components/globe-demo';
 import { MdCheckCircle } from "react-icons/md";
+import Footer from '../components/footer';
 
 
 const Home = () => (
@@ -204,6 +205,7 @@ const Home = () => (
         </Box>
       </Section>
     </Container>
+    <Footer/>
   </Layout>
 )
 
