@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import dynamic from 'next/dynamic'
 import { useColorModeValue } from '@chakra-ui/react'
-import { useMediaQuery } from '@chakra-ui/media-query';
 
 const World = dynamic(() => import('./globe').then(m => m.World), {
   ssr: false
