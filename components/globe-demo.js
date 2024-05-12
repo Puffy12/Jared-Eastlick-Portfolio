@@ -1,14 +1,16 @@
 'use client'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import dynamic from 'next/dynamic'
 import { useColorModeValue } from '@chakra-ui/react'
+import { useMediaQuery } from '@chakra-ui/media-query';
 
 const World = dynamic(() => import('./globe').then(m => m.World), {
   ssr: false
 })
 
 export function GlobeDemo() {
+  const [isMobile, setIsMobile] = useState(false);
   const colorMode = useColorModeValue('light', 'dark')
   const globeColor = useColorModeValue('#f0e7db', '#5B5B5C')
   const ambientLight = useColorModeValue('#7B9DCA', '#4E84CA')
@@ -21,8 +23,23 @@ export function GlobeDemo() {
   )
   const atmosphereColor = useColorModeValue('#000000', '#FFFFFF')
 
+  useEffect(() => {
+    // Ensures this code block runs only on the client side
+    const checkIfMobile = () => window.innerWidth < 768;
+    setIsMobile(checkIfMobile());
+
+    const handleResize = () => {
+      setIsMobile(checkIfMobile());
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const globeConfig = {
-    pointSize: 4,
+    pointSize: isMobile ? 2 : 4,
     globeColor: globeColor,
     showAtmosphere: true,
     atmosphereColor: atmosphereColor,
@@ -35,13 +52,13 @@ export function GlobeDemo() {
     directionalLeftLight: directionalLight,
     directionalTopLight: directionalLight,
     pointLight: pointLightColor,
-    arcTime: 1000,
+    arcTime: isMobile ? 1500 : 1000,
     arcLength: 0.9,
     rings: 1,
     maxRings: 3,
     initialPosition: { lat: 22.3193, lng: 114.1694 },
     autoRotate: true,
-    autoRotateSpeed: 0.5
+    autoRotateSpeed: isMobile ? 0.3 : 0.5
   }
   const colors = ['#66b2b2', '#008080', '#006666']
   const sampleArcs = [
@@ -422,11 +439,11 @@ export function GlobeDemo() {
     >
       <div
         style={{
-          maxWidth: '1120px', // Adjust max-width as needed
+          maxWidth: isMobile ? '360px' : '1120px', // Adjust max-width as needed
           width: '100%',
           position: 'relative',
           overflow: 'hidden',
-          height: '400px', // Adjust height as needed
+          height: isMobile ? '200px' : '400px', // Adjust height as needed
           padding: '16px'
         }}
       >
@@ -447,9 +464,9 @@ export function GlobeDemo() {
         <div
           style={{
             position: 'absolute',
-            bottom: '-32px',
+            bottom: isMobile ? '-1px' : '-32px',
             width: '100%',
-            height: '400px', // Adjust height for globe size
+            height: isMobile ? '200px' : '400px', // Adjust height for globe size
             zIndex: '1'
           }}
         >
