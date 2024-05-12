@@ -1,8 +1,10 @@
-import { Box } from "@chakra-ui/react";
+import { Box, useColorModeValue } from "@chakra-ui/react";
 
 export default function Footer() {
+  const textColor = useColorModeValue("gray.800", "gray.200")
+
   return (
-    <Box as="footer" px={4} textAlign="center" color="gray.200" mt={20}>
+    <Box as="footer" px={4} textAlign="center" color={textColor} mt={20}>
       <small  fontSize="xs" display="block">
         &copy; 2024 Michael Mehrdadi, Brian Beilby. All rights reserved.
       </small>
