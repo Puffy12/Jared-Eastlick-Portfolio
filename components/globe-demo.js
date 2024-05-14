@@ -442,7 +442,7 @@ export function GlobeDemo() {
           width: '100%',
           position: 'relative',
           overflow: 'hidden',
-          height: isMobile ? '200px' : '400px', // Adjust height as needed
+          height: isMobile ? '300px' : '400px', // Adjust height as needed
           padding: isMobile ? '4px' : '16px',
           margin: '0 auto',
         }}
@@ -466,7 +466,7 @@ export function GlobeDemo() {
             position: 'absolute',
             bottom: isMobile ? '-1px' : '-32px',
             width: '100%',
-            height: isMobile ? '205px' : '400px', // Adjust height for globe size
+            height: isMobile ? '270px' : '400px', // Adjust height for globe size
             zIndex: '1'
           }}
         >
