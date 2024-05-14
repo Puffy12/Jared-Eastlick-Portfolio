@@ -443,7 +443,8 @@ export function GlobeDemo() {
           position: 'relative',
           overflow: 'hidden',
           height: isMobile ? '200px' : '400px', // Adjust height as needed
-          padding: '16px'
+          padding: isMobile ? '4px' : '16px',
+          margin: '0 auto',
         }}
       >
         <motion.div
@@ -465,7 +466,7 @@ export function GlobeDemo() {
             position: 'absolute',
             bottom: isMobile ? '-1px' : '-32px',
             width: '100%',
-            height: isMobile ? '200px' : '400px', // Adjust height for globe size
+            height: isMobile ? '205px' : '400px', // Adjust height for globe size
             zIndex: '1'
           }}
         >
