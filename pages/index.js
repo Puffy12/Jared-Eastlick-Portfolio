@@ -40,7 +40,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m a Experienced Freelance Content Writer based in the United States! 
+        Hello, I&apos;m an Experienced Freelance Content Writer based in the United States! 
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -81,7 +81,7 @@ const Home = () => (
         </Heading>
         <Paragraph>
         Detail-oriented writer and economics graduate seeking to help clients boost traffic on their websites by creating quality content that follows 
-        the most up-to-date date SEO Practices.Worked on 21 different content writing assignments covering topics such as smartwatches, 
+        the most up-to-date date SEO Practices. Worked on 21 different content writing assignments covering topics such as smartwatches, 
         fitness trackers, printers, gaming keyboards, and fans that has helped generate traffic to reach new audiences. 
         </Paragraph>
         <Box align="center" my={4}>
@@ -108,7 +108,7 @@ const Home = () => (
             </ListItem>
             <ListItem>
             <ListIcon as={MdCheckCircle} color="green.500" />
-              My best performing individual product review,the Amazfit Band 7 fitness tracker,  has attracted over 7,000 views.
+              My best performing individual product review, the Amazfit Band 7 fitness tracker, has attracted over 7,000 views.
             </ListItem>
           </List>
       </Section>
