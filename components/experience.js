@@ -29,7 +29,7 @@ export default function Experience() {
                 border: border,
                 textAlign: "left",
                 borderRadius: "lg",
-                width: "calc(50% + 8rem)",
+                width: "calc(50% + 7.5rem)",
                 marginRight: "calc(-5%)",
               }}
               contentArrowStyle={{
