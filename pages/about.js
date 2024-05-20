@@ -6,6 +6,8 @@ import Section from '../components/section';
 import NextLink from 'next/link';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import { MdSettings } from "react-icons/md";
+import Footer from '../components/footer';
+
 
 const About = () => {
     return (
@@ -125,6 +127,23 @@ const About = () => {
                     </List>
                 </Box>
             </Section>
+
+            <Box
+                bg="gray.200"
+                mt={{ base: 16, md: 24 }}  
+                mb={{ base: 16, md: 24 }}  
+                h="16"
+                w="1"
+                rounded="full"
+                display={{ base: "none", sm: "block" }}
+                dark={{ bg: "gray.200", bgOpacity: 0.2 }}
+                opacity="0"
+                marginX="auto"
+                delay={0.1}
+            ></Box>
+
+            <Footer/>
+
         </Layout>
     );
 };

@@ -15,6 +15,8 @@ import Layout from '../components/layouts/article'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import { Toaster } from 'react-hot-toast'
+import Footer from '../components/footer';
+
 
 const arrowVariants = {
   animate: {
@@ -162,6 +164,22 @@ const Contact = () => {
           </Button>
         </form>
       </motion.section>
+
+      <Box
+          bg="gray.200"
+          mt={{ base: 16, md: 24 }}  
+          mb={{ base: 16, md: 24 }}  
+          h="16"
+          w="1"
+          rounded="full"
+          display={{ base: "none", sm: "block" }}
+          dark={{ bg: "gray.200", bgOpacity: 0.2 }}
+          opacity="0"
+          marginX="auto"
+          delay={0.1}
+      ></Box>
+
+            <Footer/>
     </Layout>
   )
 }

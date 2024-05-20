@@ -1,8 +1,8 @@
-import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, Box } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
-
+import Footer from '../components/footer';
 import { workData } from "../lib/work_data";
 
 const Works = () => (
@@ -27,6 +27,22 @@ const Works = () => (
       </SimpleGrid>
 
     </Container>
+    
+    <Box
+          bg="gray.200"
+          mt={{ base: 16, md: 24 }}  
+          mb={{ base: 16, md: 24 }}  
+          h="16"
+          w="1"
+          rounded="full"
+          display={{ base: "none", sm: "block" }}
+          dark={{ bg: "gray.200", bgOpacity: 0.2 }}
+          opacity="0"
+          marginX="auto"
+          delay={0.1}
+      ></Box>
+
+            <Footer/>
   </Layout>
 )
 
