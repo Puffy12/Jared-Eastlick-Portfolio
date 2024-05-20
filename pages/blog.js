@@ -1,4 +1,4 @@
-import { Container, Heading, SimpleGrid, Box } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, Box, Text } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
@@ -13,6 +13,11 @@ const Posts = () => (
       </Heading>
 
       <Section delay={0.1}>
+      {gridData.length === 0 ? (
+        <Box textAlign="center" mt={10}>
+          <Text fontSize="xl" color="white">No Blogs posted yet, stay tuned!</Text>
+        </Box>
+      ) : (
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           {gridData.map((item, index) => (
             <GridItem
@@ -23,7 +28,8 @@ const Posts = () => (
             />
           ))}
         </SimpleGrid>
-      </Section>
+      )}
+    </Section>
 
       <Section delay={0.3}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
