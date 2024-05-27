@@ -60,3 +60,4 @@ To get a local copy up and running, follow these simple steps:
    ```sh
    npm run dev
    ```
+2. Open your browser and navigate to http://localhost:3000 to see the application in action.
