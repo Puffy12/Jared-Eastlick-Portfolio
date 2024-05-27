@@ -51,3 +51,8 @@ To get a local copy up and running, follow these simple steps:
    git clone https://github.com/yourusername/jared-eastlick-portfolio.git
    ```
 2. Install NPM Packages
+   ```sh
+   npm install
+   ```
+### Usage
+
