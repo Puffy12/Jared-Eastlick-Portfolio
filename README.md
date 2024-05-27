@@ -56,3 +56,7 @@ To get a local copy up and running, follow these simple steps:
    ```
 ### Usage
 
+1. Run the development server
+   ```sh
+   npm run dev
+   ```
