@@ -26,7 +26,7 @@ export const WorkGridItem = ({
   children,
   title,
   thumbnail,
-  href
+  href,
 }) => (
   <CardStyle w="100%" textAlign="center">
     <LinkBox

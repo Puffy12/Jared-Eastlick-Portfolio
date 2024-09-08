@@ -25,7 +25,9 @@ const Posts = () => (
               title={item.title}
               thumbnail={item.thumbnail}
               href={item.href}
-            />
+            >
+              {item.description}
+            </GridItem>
           ))}
         </SimpleGrid>
       )}
