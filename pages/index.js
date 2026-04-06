@@ -40,7 +40,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m an Experienced Freelance Content Writer based in the United States! 
+        Hello, I&apos;m an Experienced Data Analyst and Writer based in the United States! 
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -48,7 +48,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Jared Eastlick
           </Heading>
-          <p>Freelance Writer</p>
+          <p>Data Analyst + Writer</p>
         </Box>
         <Box
           flexShrink={0}
