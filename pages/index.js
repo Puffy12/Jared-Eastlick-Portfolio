@@ -10,14 +10,13 @@ import {
   ListItem,
   useColorModeValue,
   ListIcon
-
 } from '@chakra-ui/react'
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons';
 import Paragraph from '../components/paragraph';
 import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import { GridItem } from '../components/grid-item';
-import { IoLogoTwitter, IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io5';
+import { IoLogoTwitter, IoLogoInstagram, IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5';
 import thumbFloorFans from '../public/images/works/floorfans_eyecatch.png';
 import thumbGamingKeyboards from '../public/images/works/gamingkeyboards_eyecatch.png';
 import Image from 'next/image';
@@ -75,6 +74,7 @@ const Home = () => (
           </Box>
         </Box>
       </Box>
+
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           Work
@@ -104,25 +104,29 @@ const Home = () => (
         <List spacing={3}>
           <ListItem>
             <ListIcon as={MdCheckCircle} color="green.500" />
-                Wrote a Best-in-Class (BIC) review summarizing tester&apos;s opinions on the best floor fans available that has nearly 12,000 views
-            </ListItem>
-            <ListItem>
+            Built geospatial data pipeline crosswalking CalFire DINS data with IRWIN fire perimeters, creating feature layers from Snowflake data to power a statewide fire history web map and dashboard
+          </ListItem>
+          <ListItem>
             <ListIcon as={MdCheckCircle} color="green.500" />
-              My best performing individual product review, the Amazfit Band 7 fitness tracker, has attracted over 7,000 views.
-            </ListItem>
-          </List>
+            Wrote a Best-in-Class (BIC) review on floor fans with nearly 12,000 views
+          </ListItem>
+          <ListItem>
+            <ListIcon as={MdCheckCircle} color="green.500" />
+            Amazfit Band 7 review attracting over 7,000 views
+          </ListItem>
+        </List>
       </Section>
 
       <Section delay={0.2}>
-      <Heading as="h3" variant="section-title" mt={20}>
+        <Heading as="h3" variant="section-title" mt={20}>
           My Experience
         </Heading>
         <Experience/>
       </Section>
 
       <Section delay={0.3} >
-      <Heading as="h3" variant="section-title" mt={20}>
-        Education/Qualifications
+        <Heading as="h3" variant="section-title" mt={20}>
+          Education/Qualifications
         </Heading>
         <Education/>
       </Section>
@@ -132,7 +136,18 @@ const Home = () => (
           Links
         </Heading>
         <List>
-        <ListItem>
+          <ListItem>
+            <Link href="https://github.com/JaredEastlick" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoGithub />}
+              >
+                @JaredEastlick (GitHub)
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
             <Link href="https://www.instagram.com/jared.beastlick/" target="_blank">
               <Button
                 variant="ghost"
@@ -150,7 +165,7 @@ const Home = () => (
                 colorScheme="teal"
                 leftIcon={<IoLogoLinkedin />}
               >
-                 @JaredEastlick
+                @JaredEastlick
               </Button>
             </Link>
           </ListItem>
@@ -188,7 +203,7 @@ const Home = () => (
           Contact Me
         </Heading>
         <p>
-          Feel free to contant me about any free lancing or any other opportunity.
+          Feel free to contact me about any freelancing or other opportunities.
           Check out the link below.
         </p>
 
