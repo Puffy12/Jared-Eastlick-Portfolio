@@ -80,9 +80,9 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-        Detail-oriented writer and economics graduate seeking to help clients boost traffic on their websites by creating quality content that follows 
-        the most up-to-date date SEO Practices. Worked on 21 different content writing assignments covering topics such as smartwatches, 
-        fitness trackers, printers, gaming keyboards, and fans that has helped generate traffic to reach new audiences. 
+          Data analyst with experience supporting disaster recovery programs at Cal OES through data analysis, dashboard development, and cross-program data integration. 
+          Skilled in working with databases, building reporting workflows, and leveraging tools such as SQL, Python, Excel, and GIS to transform complex datasets into actionable insights. 
+          Complemented by a background in freelance writing and SEO content development, with a proven ability to communicate technical information clearly to diverse audiences.
         </Paragraph>
         <Box align="center" my={4}>
           <Button
