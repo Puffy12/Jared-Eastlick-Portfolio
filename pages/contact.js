@@ -18,6 +18,8 @@ import { Toaster } from 'react-hot-toast'
 import Footer from '../components/footer';
 
 
+const ChakraPaperPlane = chakra(FaPaperPlane)
+
 const arrowVariants = {
   animate: {
     y: [0, -15, 0],
@@ -31,7 +33,6 @@ const arrowVariants = {
 }
 
 const Contact = () => {
-  const ChakraPaperPlane = chakra(FaPaperPlane) // Wrap the icon component with chakra
   const bg = useColorModeValue('white', 'gray.800') // Background color for inputs
   const borderColor = useColorModeValue('gray.300', 'gray.600') // Border color for inputs
   const hoverBg = useColorModeValue('gray.100', 'gray.700') // Background color on hover for inputs
