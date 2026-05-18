@@ -5,7 +5,8 @@
       "Bash(npm view *)",
       "Bash(gh api *)",
       "WebFetch(domain:nvd.nist.gov)",
-      "Bash(npm install *2)"
+      "Bash(npm install *2)",
+      "Bash(git commit *)"
     ]
   }
 }
